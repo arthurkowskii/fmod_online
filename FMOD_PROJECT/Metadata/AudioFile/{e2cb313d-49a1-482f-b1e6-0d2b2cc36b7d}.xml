@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{e2cb313d-49a1-482f-b1e6-0d2b2cc36b7d}">
+		<property name="assetPath">
+			<value>KSHMR Vintage Record Loop 22 (128, Em) - Salsa Party.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>7.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a79e3053-e470-4b33-b4d3-285771cc941d}</destination>
+		</relationship>
+	</object>
+</objects>

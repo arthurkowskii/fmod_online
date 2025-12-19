@@ -1,0 +1,11 @@
+{
+  "name": "fmod-online",
+  "version": "1.0.0",
+  "description": "FMOD Web Integration",
+  "scripts": {
+    "dev": "serve webpage"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}

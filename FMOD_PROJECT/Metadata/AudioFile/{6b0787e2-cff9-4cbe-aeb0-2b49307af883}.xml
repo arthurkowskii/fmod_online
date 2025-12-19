@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{6b0787e2-cff9-4cbe-aeb0-2b49307af883}">
+		<property name="assetPath">
+			<value>KSHMR Friends - 22Bullets - Guitar Strum (128, Am).wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>16.875011337868482</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a79e3053-e470-4b33-b4d3-285771cc941d}</destination>
+		</relationship>
+	</object>
+</objects>

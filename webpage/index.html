@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FMOD MUSIQUE Control</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #2d2d2d;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            text-align: center;
+            width: 400px;
+        }
+        h1 {
+            margin-bottom: 2rem;
+            color: #ffaa00;
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        button {
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+            background-color: #ffaa00;
+            color: black;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #cc8800;
+        }
+        button:disabled {
+            background-color: #555;
+            cursor: not-allowed;
+            color: #888;
+        }
+        .instrument-selector {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        select {
+            padding: 0.8rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            background-color: #3d3d3d;
+            color: white;
+            border: 1px solid #ffaa00;
+        }
+        .status {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FMOD Musique</h1>
+        <div class="controls">
+            <div class="button-group">
+                <button id="btn-play" disabled>Play</button>
+                <button id="btn-stop" disabled>Stop</button>
+            </div>
+            <div class="instrument-selector">
+                <label for="instrument">Instrument:</label>
+                <select id="instrument" disabled>
+                    <option value="0">TROMPETTES</option>
+                    <option value="1">GUITARE</option>
+                </select>
+            </div>
+        </div>
+        <div class="status" id="status">Loading FMOD...</div>
+    </div>
+
+    <!-- FMOD Library -->
+    <script src="fmod/fmodstudio.js"></script>
+    <!-- Application Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
